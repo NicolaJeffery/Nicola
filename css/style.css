@@ -1,9 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
-  font-weight: 300;
+  font-weight: 400;
   /* Sets the font weight to 300 */
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
@@ -16,17 +20,17 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 2.25em;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h2 {
   font-size: 1.75em;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 1.25em;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h4 {
@@ -69,7 +73,7 @@ a:focus {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #CFB7CC;
+  background-color: #E7DBE5;
   color: #874D7F;
   /* needed to override the default link color */
   font-weight: 400;
@@ -82,16 +86,157 @@ a:focus {
 
 .button:hover {
   background-color: #874D7F;
-  color: #CFB7CC;
+  color: #E7DBE5;
   /* needed to override the default link color */
   text-decoration: none;
 }
 
-header {}
+/* Layout styling */
+header {
+  background-color: #1A1B1F;
+  padding: 10px;
+  position: fixed;
+  width: 100%
+}
 
-main {}
+.container {
+  padding: 0 50px;
+}
 
-footer {}
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
 
-Background Colors;
-Black - #1a1b1f White - #ffffff
+.logo {
+  max-width: 250px;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: right;
+  position: fixed;
+  right: 10px;
+  top: 20px;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  font-weight: 600;
+}
+
+nav>ul>li>a {
+  color: #ffffff;
+  text-decoration: none;
+  /* No underlining */
+}
+
+nav>ul>li>a:visited {
+  /* visited link */
+  color: #ffffff;
+}
+
+nav>ul>li>a:hover {
+  color: #874D7F;
+  text-decoration: none;
+  /* Underlining when hovering over a link */
+}
+
+nav>ul>li>a:active {
+  /* selected link */
+  color: #ffffff;
+}
+
+nav>ul>li>a:hover,
+nav>ul>li>a:focus {
+  color: #874D7F;
+  text-decoration: none;
+}
+
+/*hero*/
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+  color: #ffffff
+}
+
+#hero p {
+  text-align: center;
+  /* Centers text */
+  color: #ffffff
+}
+
+#hero {
+  background-color: #1A1B1F;
+}
+
+#hero {
+  background-color: #1A1B1F;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 100px;
+}
+
+/*work*/
+.wrapper-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  row-gap: 1em;
+  text-align: center;
+  align-items: center;
+}
+
+.wrapper-2v {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  row-gap: 1em;
+  align-items: center;
+  text-align: center;
+}
+
+footer {
+  color: #ffffff;
+  background-color: #1A1B1F;
+  padding: 10px;
+  width: 100%
+}
+
+.social {
+  max-width: 20px;
+  margin: 10px
+}
+
+.supplementimage {
+  align-items: center;
+  max-width: 400px;
+}
+
+.wrapper-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  row-gap: 1em;
+  align-items: center;
+  text-align: center;
+}
+
+.supplementimage2 {
+  align-items: center;
+  max-width: 900px;
+}
+
+.supplementimage3 {
+  align-items: center;
+  max-width: 600px;
+}
