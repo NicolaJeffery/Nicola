@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+/*Text */
 body {
   background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
@@ -14,6 +15,7 @@ body {
   color: #000000;
 }
 
+/* Headings */
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -38,10 +40,12 @@ h4 {
   font-weight: 400;
 }
 
+/* images */
 img {
   width: 100%;
 }
 
+/* links */
 a {
   color: #874D7F;
   text-decoration: none;
@@ -70,6 +74,7 @@ a:focus {
   text-decoration: underline;
 }
 
+/* buttons */
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -92,9 +97,10 @@ a:focus {
 }
 
 /* Layout styling */
+/* header */
 header {
   background-color: #1A1B1F;
-  padding: 10px;
+  padding: 20px;
   position: fixed;
   width: 100%
 }
@@ -115,10 +121,8 @@ header {
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin-top: -60px;
   text-align: right;
-  position: fixed;
-  right: 10px;
-  top: 20px;
 }
 
 nav>ul>li {
@@ -186,11 +190,11 @@ main {
   padding-top: 100px;
 }
 
-/*work*/
-
+/* footer */
 footer {
   color: #ffffff;
   background-color: #1A1B1F;
+  text-align: center;
   padding: 10px;
   width: 100%
 }
@@ -200,30 +204,27 @@ footer {
   margin: 10px
 }
 
-.supplementimage {
-  align-items: center;
-  max-width: 400px;
+/* work */
+.colmargin {
+  margin: 25px 0;
 }
 
-.supplementimage2 {
-  align-items: center;
+.projectimage {
   max-width: 900px;
 }
 
-.supplementimage3 {
-  align-items: center;
+.projectimage2 {
   max-width: 600px;
 }
 
-.wrapper, .wrapper-2, .wrapper-3 {
-  display: grid;
-  grid-template-columns: 1fr;
-  column-gap: 0px;
-  row-gap: 1em;
+.centerimage {
+  text-align: center;
+  display: block;
 }
 
+/* columns */
 @media only screen and (min-width: 1024px) {
-  .main-container {
+  .container {
     margin: 0 auto;
     max-width: 1200px;
     padding: 0;
@@ -234,17 +235,9 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 40px;
     row-gap: 1em;
-    text-align: center;
+    text-align: left;
     align-items: center;
-  }
-
-  .wrapper-2v {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 40px;
-    row-gap: 1em;
-    align-items: center;
-    text-align: center;
+    margin: 35px 0;
   }
 
   .wrapper-3 {
@@ -253,5 +246,5 @@ footer {
     column-gap: 40px;
     row-gap: 1em;
     align-items: center;
-    text-align: center;
+    text-align: left;
   }
