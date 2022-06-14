@@ -237,7 +237,7 @@ footer {
     max-width: 1200px;
     padding: 0;
   }
-}
+
 
   .wrapper-2 {
     display: grid;
@@ -257,3 +257,4 @@ footer {
     align-items: center;
     text-align: left;
   }
+}
