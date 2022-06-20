@@ -20,21 +20,24 @@
   <!-- Header section -->
   <header>
     <div class="container">
-      <img class="logo" src="img/nicolajefferylogo.svg" alt="Nicola Jeffery">
-      <nav>
-        <ul>
-          <li><a href="index.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+      <script src="https://kit.fontawesome.com/fd3d1d1cd5.js" crossorigin="anonymous"></script>
+      <div class="navtoggle" id="myNavtoggle">
+        <img class="logo" src="img/nicolajefferylogo.svg" alt="Nicola Jeffery">
+        <nav>
+          <ul>
+            <li><a href="index.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
   </header>
 
   <!-- Main section -->
   <main>
     <div class="container">
-      <div class="wrapper-2">
+      <div class="wrapper-2topabout">
         <div>
           <picture>
             <img src="img/about/Photo.jpg" alt="Nicola Jeffery">
@@ -102,5 +105,6 @@
       <p> Copyright Nicola Jeffery 2022 </p>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>

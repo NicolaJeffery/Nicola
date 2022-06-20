@@ -108,13 +108,13 @@ a:focus {
 /* header */
 header {
   background-color: #1A1B1F;
-  padding: 20px;
+  padding: 30px 0 4px;
   position: fixed;
   width: 100%
 }
 
 .container {
-  padding: 0 25px;
+  padding: 0 10px;
 }
 
 .row {
@@ -123,7 +123,84 @@ header {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 16px;
+  padding-right: 0;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+main {
+  padding-top: 30px;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li:first-child {
+  display: block;
+  padding-top: 60px
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid (#ffffff);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+@media only screen and (min-width: 641px) {
+  .logo {
+    max-width: 250px;
+  }
+
+  nav>ul {
+    position: absolute;
+    right: 0;
+    text-align: right;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
 
 nav>ul {
@@ -131,10 +208,6 @@ nav>ul {
   padding: 0;
   margin-top: -60px;
   text-align: right;
-}
-
-nav>ul>li {
-  display: inline-block;
 }
 
 nav>ul>li>a {
@@ -195,7 +268,7 @@ nav>ul>li>a:focus {
 }
 
 main {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 /* footer */
@@ -238,7 +311,6 @@ footer {
     padding: 0;
   }
 
-
   .wrapper-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -249,6 +321,27 @@ footer {
     margin: 35px 0;
   }
 
+  .wrapper-2top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 1em;
+    text-align: left;
+    align-items: center;
+    margin: 35px 0;
+  }
+
+  .wrapper-2topabout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 1em;
+    text-align: left;
+    align-items: center;
+    margin: 35px 0;
+    padding-top:30px
+  }
+
   .wrapper-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -257,4 +350,10 @@ footer {
     align-items: center;
     text-align: left;
   }
+}
+@media only screen and (max-width: 1023px) {
+  .wrapper-2top {
+  padding-top: 20px }
+  .wrapper-2topabout {
+  padding-top: 20px }
 }
