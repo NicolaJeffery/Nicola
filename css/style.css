@@ -2,27 +2,33 @@
   box-sizing: border-box;
 }
 
-/*Text */
+/* Text */
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+
   /* Sets the font size to 16px */
   font-weight: 400;
+
   /* Sets the font weight to 300 */
   line-height: 1.6;
+
   /* Sets the line-height to 1.6 * the font-size */
-  color: #000000;
+  color: #000;
 }
 
 @media only screen and (min-width: 1040px) {
   body {
-    font-size: 18px
+    font-size: 18px;
   }
 }
 
 /* Headings */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
@@ -53,64 +59,70 @@ img {
 
 /* links */
 a {
-  color: #874D7F;
+  color: #874d7f;
   text-decoration: none;
+
   /* No underlining */
 }
 
 a:visited {
   /* visited link */
-  color: #874D7F;
+  color: #874d7f;
 }
 
 a:hover {
-  color: #000000;
+  color: #000;
   text-decoration: underline;
+
   /* Underlining when hovering over a link */
 }
 
 a:active {
   /* selected link */
-  color: #000000;
+  color: #000;
 }
 
 a:hover,
 a:focus {
-  color: #000000;
+  color: #000;
   text-decoration: underline;
 }
 
 /* buttons */
 .button {
   display: inline-block;
+
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #E7DBE5;
-  color: #874D7F;
+  background-color: #e7dbe5;
+  color: #874d7f;
+
   /* needed to override the default link color */
   font-weight: 400;
   padding: 5px;
   border-radius: 3px;
-  border-bottom: 0px solid #994c30;
+
   /* width of the border, type, color */
   transition-duration: 0.4s;
   transition-property: color;
 }
 
 .button:hover {
-  background-color: #874D7F;
-  color: #E7DBE5;
+  background-color: #874d7f;
+  color: #e7dbe5;
+
   /* needed to override the default link color */
   text-decoration: none;
   opacity: 0.8;
 }
 
 /* Layout styling */
+
 /* header */
 header {
-  background-color: #1A1B1F;
+  background-color: #1a1b1f;
   padding: 30px 0 4px;
   position: fixed;
-  width: 100%
+  width: 100%;
 }
 
 .container {
@@ -119,6 +131,7 @@ header {
 
 .row {
   margin: 25px 0;
+
   /* 25px top and bottom, 0 left and right */
 }
 
@@ -130,7 +143,8 @@ header {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -147,7 +161,7 @@ nav {
   width: 100%;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
 }
@@ -166,13 +180,13 @@ main {
 
 .navtoggle.responsive li:first-child {
   display: block;
-  padding-top: 60px
+  padding-top: 60px;
 }
 
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid (#ffffff);
+  border-top: 1px solid (#fff);
 }
 
 .navtoggle.responsive li:last-child {
@@ -184,13 +198,13 @@ main {
     max-width: 250px;
   }
 
-  nav>ul {
+  nav > ul {
     position: absolute;
     right: 0;
     text-align: right;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
@@ -201,68 +215,79 @@ main {
   .navtoggle li:last-child {
     display: none;
   }
+
+  .navtoggle.responsive nav {
+    padding: 0px 0 0;
+  }
+
+  .navtoggle.responsive li {
+    padding: 0px 0;
+  }
 }
 
-
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin-top: -60px;
   text-align: right;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   font-weight: 600;
 }
 
-nav>ul>li>a {
-  color: #ffffff;
+nav > ul > li > a {
+  color: #fff;
   text-decoration: none;
+
   /* No underlining */
 }
 
-nav>ul>li>a:visited {
+nav > ul > li > a:visited {
   /* visited link */
-  color: #ffffff;
+  color: #fff;
 }
 
-nav>ul>li>a:hover {
-  color: #874D7F;
+nav > ul > li > a:hover {
+  color: #874d7f;
   text-decoration: none;
+
   /* Underlining when hovering over a link */
 }
 
-nav>ul>li>a:active {
+nav > ul > li > a:active {
   /* selected link */
-  color: #ffffff;
+  color: #fff;
 }
 
-nav>ul>li>a:hover,
-nav>ul>li>a:focus {
-  color: #874D7F;
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  color: #874d7f;
   text-decoration: none;
 }
 
-/*hero*/
+/* hero */
 #hero h1 {
   text-align: center;
+
   /* Centers text */
-  color: #ffffff
+  color: #fff;
 }
 
 #hero p {
   text-align: center;
+
   /* Centers text */
-  color: #ffffff
+  color: #fff;
 }
 
 #hero {
-  background-color: #1A1B1F;
+  background-color: #1a1b1f;
 }
 
 #hero {
-  background-color: #1A1B1F;
+  background-color: #1a1b1f;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -274,16 +299,16 @@ main {
 
 /* footer */
 footer {
-  color: #ffffff;
-  background-color: #1A1B1F;
+  color: #fff;
+  background-color: #1a1b1f;
   text-align: center;
   padding: 10px;
-  width: 100%
+  width: 100%;
 }
 
 .social {
   max-width: 30px;
-  margin: 10px
+  margin: 10px;
 }
 
 /* work */
@@ -340,7 +365,7 @@ footer {
     text-align: left;
     align-items: center;
     margin: 35px 0;
-    padding-top:30px
+    padding-top: 30px;
   }
 
   .wrapper-3 {
@@ -352,9 +377,13 @@ footer {
     text-align: left;
   }
 }
+
 @media only screen and (max-width: 1023px) {
   .wrapper-2top {
-  padding-top: 20px }
+    padding-top: 20px;
+  }
+
   .wrapper-2topabout {
-  padding-top: 20px }
+    padding-top: 20px;
+  }
 }

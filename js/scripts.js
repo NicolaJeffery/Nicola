@@ -1,18 +1,17 @@
-console.log("hello world")
+console.log('hello world')
 
-function menuToggle() {
-  var x = document.getElementById('myNavtoggle');
+function menuToggle () {
+  var x = document.getElementById('myNavtoggle')
   if (x.className === 'navtoggle') {
-    x.className += ' responsive';
+    x.className += ' responsive'
   } else {
-    x.className = 'navtoggle';
+    x.className = 'navtoggle'
   }
-var icon=document.getElementsByClassName("fa-bars")[0];
-if(icon){
-icon.className = icon.className.replace("fa-bars", "fa-xmark");
-}
-else{
-icon=document.getElementsByClassName("fa-xmark")[0];
-icon.className = icon.className.replace("fa-xmark", "fa-bars");
-}
+  var icon = document.getElementsByClassName('fa-bars')[0]
+  if (icon) {
+    icon.className = icon.className.replace('fa-bars', 'fa-xmark')
+  } else {
+    icon = document.getElementsByClassName('fa-xmark')[0]
+    icon.className = icon.className.replace('fa-xmark', 'fa-bars')
+  }
 }
