@@ -59,7 +59,7 @@ img {
 
 /* links */
 a {
-  color: #874d7f;
+  color: #a25c98;
   text-decoration: none;
 
   /* No underlining */
@@ -67,7 +67,7 @@ a {
 
 a:visited {
   /* visited link */
-  color: #874d7f;
+  color: #a25c98;
 }
 
 a:hover {
