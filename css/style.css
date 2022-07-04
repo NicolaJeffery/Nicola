@@ -100,7 +100,7 @@ a:focus {
 
   /* needed to override the default link color */
   font-weight: 400;
-  padding: 15px;
+  padding: 10px;
   border-radius: 3px;
 
   /* width of the border, type, color */
