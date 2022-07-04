@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+html { scroll-behavior: smooth; }
+
 /* Text */
 body {
   background-color: #fff;
@@ -98,7 +100,7 @@ a:focus {
 
   /* needed to override the default link color */
   font-weight: 400;
-  padding: 5px;
+  padding: 15px;
   border-radius: 3px;
 
   /* width of the border, type, color */
@@ -179,7 +181,6 @@ main {
 }
 
 .navtoggle.responsive li:first-child {
-  display: block;
   padding-top: 60px;
 }
 
@@ -195,6 +196,7 @@ main {
 
 @media only screen and (min-width: 641px) {
   .logo {
+    float: left;
     max-width: 250px;
   }
 
@@ -222,6 +224,17 @@ main {
 
   .navtoggle.responsive li {
     padding: 0px 0;
+  }
+
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: -60px;
+    text-align: right;
+  }
+
+  .navtoggle.responsive li:first-child {
+    padding-top: 0px;
   }
 }
 
